@@ -1,0 +1,40 @@
+@use "variables" as var;
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: var.$default-padding;
+}
+
+.logo-content {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  & .logo {
+    width: 4rem;
+    max-width: 100%;
+  }
+
+  & .logo-title {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+.header__links {
+  ul {
+    display: flex;
+    gap: 2rem;
+
+    a {
+      color: var.$color-very-dark-blue;
+      transition: var.$timing-animation;
+    }
+
+    & a:hover {
+      color: var.$color-soft-red;
+    }
+  }
+}

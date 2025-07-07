@@ -1,0 +1,18 @@
+@use "variables" as var;
+
+section:nth-of-type(1) {
+  & .section__title {
+    font-size: 4.2rem;
+  }
+}
+
+.section__buttons {
+  display: flex;
+  gap: var.$default-padding;
+  margin-top: var.$default-padding;
+
+  & .button-secondary {
+    background-color: var.$color-off-white;
+    color: #000;
+  }
+}

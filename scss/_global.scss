@@ -1,0 +1,63 @@
+@use "variables" as var;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var.$default-padding * 4);
+  max-width: var.$desktop-width;
+  margin: 0 auto;
+  padding: 0 var.$default-padding;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  gap: calc(var.$default-padding * 2);
+
+  &--one-column {
+    flex-direction: column;
+    gap: calc((var.$default-padding) / 2);
+
+    & .section__description {
+      max-width: 50rem;
+      text-align: center;
+    }
+  }
+
+  & .section__content {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var.$default-padding / 2);
+    flex: 1;
+  }
+
+  & .section__title {
+    font-size: 2.4rem;
+  }
+
+  & .section__description {
+    font-size: 1.4rem;
+    color: var.$color-grayish-blue;
+  }
+}
+
+.section__imageContent {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+
+  & .section__image {
+    max-width: 100%;
+  }
+}
+
+.button {
+  padding: 1.2rem 2.4rem;
+  background-color: var.$color-soft-blue;
+  border-radius: var.$default-radius;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  box-shadow: 0 0.4rem 0.8rem 0.2rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+}

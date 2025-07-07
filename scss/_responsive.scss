@@ -1,0 +1,47 @@
+@use "variables" as var;
+
+@media (max-width: 600px) {
+  .container {
+    gap: calc((var.$default-padding) * 2);
+  }
+
+  .section {
+    flex-direction: column;
+    gap: var.$default-padding;
+
+    &__imageContent {
+      order: -1;
+    }
+  }
+
+  .header {
+    font-size: 1.4rem;
+
+    &__links {
+      ul {
+        gap: calc((var.$default-padding) / 2);
+      }
+    }
+  }
+
+  .button:not(.card__button) {
+    flex: 1;
+  }
+
+  .cards {
+    flex-wrap: wrap;
+
+    .card {
+      width: 100%;
+    }
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: calc((var.$default-padding) / 2);
+
+    &__left {
+      margin-right: 0;
+    }
+  }
+}
