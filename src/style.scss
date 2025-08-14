@@ -175,9 +175,9 @@ a {
   display: flex;
   align-items: center;
   gap: calc(var(--default-padding) * 2);
-  //   opacity: 0;
-  //   transform: translateY(1rem);
-  //   transition: all var(--timing-animation) ease-in-out;
+  opacity: 0;
+  transform: translateY(1rem);
+  transition: all var(--timing-animation) ease-in-out;
 
   @media (max-width: 600px) {
     flex-wrap: wrap;
